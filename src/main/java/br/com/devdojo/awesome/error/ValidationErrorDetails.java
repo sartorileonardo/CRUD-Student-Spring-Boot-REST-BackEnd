@@ -3,7 +3,7 @@ package br.com.devdojo.awesome.error;
 /**
  * @author  Leonardo Sartori on 27/12/2018.
  */
-public class ValidationErrorDetails extends ErrorDetail {
+public class ValidationErrorDetails extends ErrorDetails {
     private String field;
     private String fieldMessage;
 
