@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4ab4bfa1-2918-4110-83b6-0e9813505310" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/endpoint/StudentEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/endpoint/StudentEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ErrorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ErrorDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ResourceNotFoundDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ResourceNotFoundDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ValidationErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/error/ValidationErrorDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/handler/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/handler/RestExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/error/ErrorDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/error/ResourceNotFoundDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/error/ResourceNotFoundDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/error/ValidationErrorDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/error/ValidationErrorDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/handler/RestExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/devdojo/awesome/handler/RestExceptionHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -374,7 +364,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="builder&#9;ACTION&#9;GoToBuilder" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545938769498" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545938907207" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -444,7 +434,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1012" height="1020" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34958506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -463,10 +452,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32918552" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3278496" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3278496" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50110865" side_tool="true" weight="0.32896176" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32902467" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32902467" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32930845" />
       <window_info anchor="bottom" id="DB Execution Console" order="13" />
