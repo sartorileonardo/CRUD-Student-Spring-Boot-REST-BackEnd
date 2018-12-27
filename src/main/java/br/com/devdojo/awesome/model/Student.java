@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.Entity;
 
 /**
- * Created by Leonardo Sartori on 26/12/2018.
+ * @author  Leonardo Sartori on 26/12/2018.
  */
 @Entity
 public class Student extends AbstractEntity{

@@ -6,8 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 /**
- * Created by Leonardo Sartori on 27/12/2018.
+ * @author  Leonardo Sartori on 27/12/2018.
  */
 public interface StudentRepository extends CrudRepository<Student, Long> {
-    List<Student> findByNameIgnoreCaseContaining(String name);
+    List<Student> findByNameIgnoreCaseContainingOrderByNameAsc(String name);
 }

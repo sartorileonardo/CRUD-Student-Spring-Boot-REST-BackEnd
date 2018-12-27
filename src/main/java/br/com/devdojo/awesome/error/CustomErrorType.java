@@ -1,7 +1,7 @@
 package br.com.devdojo.awesome.error;
 
 /**
- * Created by Leonardo Sartori on 26/12/2018.
+ * @author  Leonardo Sartori on 26/12/2018.
  */
 public class CustomErrorType {
     private String errorMessage;

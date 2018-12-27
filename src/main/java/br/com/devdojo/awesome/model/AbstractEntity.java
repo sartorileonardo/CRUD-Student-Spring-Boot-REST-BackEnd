@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * Created by Leonardo Sartori on 27/12/2018.
+ * @author  Leonardo Sartori on 27/12/2018.
  */
 @MappedSuperclass
 public class AbstractEntity implements Serializable {

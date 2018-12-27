@@ -1,0 +1,250 @@
+{
+  "front-version": "2.19.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa",
+      "lastModified": "2018-12-27T13:39:02.979-02:00",
+      "name": "StudentApi"
+    },
+    {
+      "type": "Scenario",
+      "id": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67",
+      "lastModified": "2018-12-27T13:36:41.932-02:00",
+      "name": "Scenario CRUD",
+      "requestOrder": [
+        "GET",
+        "GET (BY ID)",
+        "GET (BY NAME)",
+        "POST",
+        "PUT"
+      ],
+      "parentId": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students"
+      },
+      "description": "List all students",
+      "id": "20fa1f24-060a-4068-a9d3-6ba2cd1934bf",
+      "lastModified": "2018-12-27T13:28:58.830-02:00",
+      "name": "GET",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/5"
+      },
+      "description": "List one student to by id.",
+      "id": "b06c0124-c997-42d5-bffb-511af495bb2c",
+      "lastModified": "2018-12-27T13:30:14.063-02:00",
+      "name": "GET (BY ID)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": null
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/findByName/Joao"
+      },
+      "description": "List students that contains this name",
+      "id": "4dc752c8-19a6-4377-b4a2-e12ee8107703",
+      "lastModified": "2018-12-27T13:31:44.865-02:00",
+      "name": "GET (BY NAME)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": null
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"name\": \"Lais\",\n\"email\": \"lais@gmail.com\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/"
+      },
+      "description": "Add one student",
+      "id": "d3a4bafa-0698-4122-a2b4-01dbce0d0704",
+      "lastModified": "2018-12-27T13:36:08.274-02:00",
+      "name": "POST",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": null
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"id\": 10,\n\"name\": \"Lais Santos\",\n\"email\": \"lais_santos@gmail.com\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students"
+      },
+      "description": "Alter detais of one student",
+      "id": "46e30c83-76bb-4b39-8c23-8d381c335ab7",
+      "lastModified": "2018-12-27T13:39:02.979-02:00",
+      "name": "PUT",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": null
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    }
+  ]
+}
