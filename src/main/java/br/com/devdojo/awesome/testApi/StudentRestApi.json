@@ -5,20 +5,22 @@
     {
       "type": "Project",
       "id": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa",
-      "lastModified": "2018-12-27T13:39:02.979-02:00",
+      "lastModified": "2018-12-28T15:33:31.624-02:00",
       "name": "StudentApi"
     },
     {
       "type": "Scenario",
+      "description": "CRUD scenario contains methods for Create, Read, Update and Delete registers, but you need to do authentication with credentials:\n\n- Admin:\nuser: admin\npassword: github\n\n- Simple User\nuser: leo\npassword: github",
       "id": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67",
-      "lastModified": "2018-12-27T13:36:41.932-02:00",
+      "lastModified": "2018-12-28T09:39:24.472-02:00",
       "name": "Scenario CRUD",
       "requestOrder": [
         "GET",
         "GET (BY ID)",
         "GET (BY NAME)",
         "POST",
-        "PUT"
+        "PUT",
+        "DELETE"
       ],
       "parentId": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa"
     },
@@ -52,7 +54,7 @@
       },
       "description": "List all students",
       "id": "20fa1f24-060a-4068-a9d3-6ba2cd1934bf",
-      "lastModified": "2018-12-27T13:28:58.830-02:00",
+      "lastModified": "2018-12-28T15:32:09.345-02:00",
       "name": "GET",
       "headers": [
         {
@@ -61,7 +63,9 @@
           "value": "application/json"
         }
       ],
-      "metaInfo": {},
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
       "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
     },
     {
@@ -91,11 +95,11 @@
           "version": "V11"
         },
         "host": "localhost:8888",
-        "path": "/students/5"
+        "path": "/students/20"
       },
       "description": "List one student to by id.",
       "id": "b06c0124-c997-42d5-bffb-511af495bb2c",
-      "lastModified": "2018-12-27T13:30:14.063-02:00",
+      "lastModified": "2018-12-28T15:32:11.455-02:00",
       "name": "GET (BY ID)",
       "headers": [
         {
@@ -105,7 +109,7 @@
         }
       ],
       "metaInfo": {
-        "ownerId": null
+        "ownerId": "github|7613528"
       },
       "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
     },
@@ -136,11 +140,11 @@
           "version": "V11"
         },
         "host": "localhost:8888",
-        "path": "/students/findByName/Joao"
+        "path": "/students/findByName/i"
       },
       "description": "List students that contains this name",
       "id": "4dc752c8-19a6-4377-b4a2-e12ee8107703",
-      "lastModified": "2018-12-27T13:31:44.865-02:00",
+      "lastModified": "2018-12-28T15:32:13.839-02:00",
       "name": "GET (BY NAME)",
       "headers": [
         {
@@ -150,7 +154,7 @@
         }
       ],
       "metaInfo": {
-        "ownerId": null
+        "ownerId": "github|7613528"
       },
       "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
     },
@@ -169,7 +173,7 @@
         },
         "bodyType": "Text",
         "autoSetLength": true,
-        "textBody": "{\n\"name\": \"Lais\",\n\"email\": \"lais@gmail.com\"\n}"
+        "textBody": "{\n\"name\": \"Ingridi\",\n\"email\": \"ingridi@gmail.com\"\n}"
       },
       "headersType": "Form",
       "uri": {
@@ -186,7 +190,7 @@
       },
       "description": "Add one student",
       "id": "d3a4bafa-0698-4122-a2b4-01dbce0d0704",
-      "lastModified": "2018-12-27T13:36:08.274-02:00",
+      "lastModified": "2018-12-28T15:32:16.338-02:00",
       "name": "POST",
       "headers": [
         {
@@ -196,7 +200,7 @@
         }
       ],
       "metaInfo": {
-        "ownerId": null
+        "ownerId": "github|7613528"
       },
       "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
     },
@@ -215,7 +219,7 @@
         },
         "bodyType": "Text",
         "autoSetLength": true,
-        "textBody": "{\n\"id\": 10,\n\"name\": \"Lais Santos\",\n\"email\": \"lais_santos@gmail.com\"\n}"
+        "textBody": "{\n\"id\": 21,\n\"name\": \"Ingridi Farias\",\n\"email\": \"ingridi_farias@gmail.com\"\n}"
       },
       "headersType": "Form",
       "uri": {
@@ -232,7 +236,7 @@
       },
       "description": "Alter detais of one student",
       "id": "46e30c83-76bb-4b39-8c23-8d381c335ab7",
-      "lastModified": "2018-12-27T13:39:02.979-02:00",
+      "lastModified": "2018-12-28T15:33:31.624-02:00",
       "name": "PUT",
       "headers": [
         {
@@ -242,7 +246,52 @@
         }
       ],
       "metaInfo": {
-        "ownerId": null
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "bodyEvaluationDisabled": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/20"
+      },
+      "id": "c989182b-112d-4963-ab0b-524544573ab4",
+      "lastModified": "2018-12-28T15:33:21.120-02:00",
+      "name": "DELETE",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
       },
       "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
     }

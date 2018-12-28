@@ -9,7 +9,7 @@ Execute: git clone https://github.com/leonardogt4/CRUD-Student-Spring-Boot-REST
 # Create database in MySQL
 Run script in path and file: "../devdojo-springboot/src/main/resources/script_create_database.sql".
 
-# Run Project
+# Run Project in InteliJJ Idea
 Run project or press Shift + F10.
 
 # Test Rest Api
