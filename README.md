@@ -16,4 +16,12 @@ Run project or press Shift + F10.
 Import the file "../devdojo-springboot/src/main/java/br/com/devdojo/awesome/testApi/StudentApi.json" to REST API plugin of the Chrome Browser.
 After execute with play button the tests.
 
+URLs
+- GET: http://localhost:8888/students
+- GET (By ID): http://localhost:8888/students/id
+- GET (By Name): http://localhost:8888/students/findByName/name
+- POST: http://localhost:8888/students/
+- PUT: http://localhost:8888/students
+- DELETE: http://localhost:8888/students/id
+
 The project is still under development...
