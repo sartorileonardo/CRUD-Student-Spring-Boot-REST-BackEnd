@@ -1,0 +1,13 @@
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/error/ResourceNotFoundException.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/handler/RestExceptionHandler.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/adapter/SpringBootEssentialsAdapter.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/error/ValidationErrorDetails.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/error/ErrorDetails.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/repository/StudentRepository.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/endpoint/StudentEndpoint.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/error/ResourceNotFoundDetails.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/model/Student.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/error/CustomErrorType.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/util/DateUtil.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/model/AbstractEntity.java
+/home/koerich/eclipse-workspace/devdojo-springboot/src/main/java/br/com/devdojo/awesome/ApplicationStart.java

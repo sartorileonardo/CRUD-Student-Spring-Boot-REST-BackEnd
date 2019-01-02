@@ -1,0 +1,16 @@
+br/com/devdojo/awesome/error/ValidationErrorDetails.class
+br/com/devdojo/awesome/model/AbstractEntity.class
+br/com/devdojo/awesome/error/ResourceNotFoundDetails$Builder.class
+br/com/devdojo/awesome/error/ResourceNotFoundDetails.class
+br/com/devdojo/awesome/util/DateUtil.class
+br/com/devdojo/awesome/adapter/SpringBootEssentialsAdapter.class
+br/com/devdojo/awesome/error/ResourceNotFoundException.class
+br/com/devdojo/awesome/error/ErrorDetails.class
+br/com/devdojo/awesome/ApplicationStart.class
+br/com/devdojo/awesome/error/ValidationErrorDetails$Builder.class
+br/com/devdojo/awesome/handler/RestExceptionHandler.class
+br/com/devdojo/awesome/error/ErrorDetails$Builder.class
+br/com/devdojo/awesome/repository/StudentRepository.class
+br/com/devdojo/awesome/model/Student.class
+br/com/devdojo/awesome/endpoint/StudentEndpoint.class
+br/com/devdojo/awesome/error/CustomErrorType.class

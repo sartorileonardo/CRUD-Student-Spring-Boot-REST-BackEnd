@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/testApi/StudentApi.json" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/testApi/StudentRestApi.json" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/awesome/testApi/testRestClientApi.json" charset="ISO-8859-1" />
   </component>
 </project>

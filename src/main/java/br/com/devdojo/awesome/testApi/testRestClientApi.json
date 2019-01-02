@@ -1,0 +1,305 @@
+{
+  "front-version": "2.19.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa",
+      "lastModified": "2019-01-02T10:14:11.296-02:00",
+      "name": "StudentApi"
+    },
+    {
+      "type": "Scenario",
+      "description": "CRUD scenario contains methods for Create, Read, Update and Delete registers, but you need to do authentication with credentials:\n\n- Admin:\nuser: admin\npassword: github\n\n- Simple User\nuser: leo\npassword: github",
+      "id": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67",
+      "lastModified": "2018-12-28T09:39:24.472-02:00",
+      "name": "Scenario CRUD",
+      "requestOrder": [
+        "GET",
+        "GET (BY ID)",
+        "GET (BY NAME)",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "parentId": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "size",
+              "value": "100"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/"
+      },
+      "description": "List all students",
+      "id": "20fa1f24-060a-4068-a9d3-6ba2cd1934bf",
+      "lastModified": "2019-01-02T09:46:24.917-02:00",
+      "name": "GET",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/21"
+      },
+      "description": "List one student to by id.",
+      "id": "b06c0124-c997-42d5-bffb-511af495bb2c",
+      "lastModified": "2019-01-02T09:43:57.733-02:00",
+      "name": "GET (BY ID)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/findByName/i"
+      },
+      "description": "List students that contains this name",
+      "id": "4dc752c8-19a6-4377-b4a2-e12ee8107703",
+      "lastModified": "2019-01-02T09:44:04.032-02:00",
+      "name": "GET (BY NAME)",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"name\": \"Yasmin\",\n\"email\": \"yasmin@gmail.com\",\n\"active\": false\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/"
+      },
+      "description": "Add one student",
+      "id": "d3a4bafa-0698-4122-a2b4-01dbce0d0704",
+      "lastModified": "2019-01-02T10:08:23.347-02:00",
+      "name": "POST",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"id\": 28,\n\"name\": \"Ingridi Farias\",\n\"email\": \"ingridi_farias@gmail.com\",\n\"active\": true\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/"
+      },
+      "description": "Alter detais of one student",
+      "id": "46e30c83-76bb-4b39-8c23-8d381c335ab7",
+      "lastModified": "2019-01-02T10:12:41.463-02:00",
+      "name": "PUT",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "bodyEvaluationDisabled": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/26"
+      },
+      "id": "c989182b-112d-4963-ab0b-524544573ab4",
+      "lastModified": "2019-01-02T10:14:11.296-02:00",
+      "name": "DELETE",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    }
+  ]
+}

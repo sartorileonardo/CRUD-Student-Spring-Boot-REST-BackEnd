@@ -18,6 +18,8 @@ public class Student extends AbstractEntity{
     @Email(message = "Insert a valid email")
     private String email;
 
+    private Boolean active;
+
     public Student() {
 
     }
@@ -25,6 +27,12 @@ public class Student extends AbstractEntity{
     public Student(String name, String email) {
         this.name = name;
         this.email = email;
+    }
+
+    public Student(String name, String email, Boolean active) {
+        this.name = name;
+        this.email = email;
+        this.active = active;
     }
 
     public String getName() {
@@ -43,11 +51,20 @@ public class Student extends AbstractEntity{
         this.email = email;
     }
 
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
+                ", active=" + active +
                 '}';
     }
 }
