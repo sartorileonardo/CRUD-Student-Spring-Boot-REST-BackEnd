@@ -5,14 +5,14 @@
     {
       "type": "Project",
       "id": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa",
-      "lastModified": "2019-01-02T10:14:11.296-02:00",
+      "lastModified": "2019-01-03T11:04:25.440-02:00",
       "name": "StudentApi"
     },
     {
       "type": "Scenario",
       "description": "CRUD scenario contains methods for Create, Read, Update and Delete registers, but you need to do authentication with credentials:\n\n- Admin:\nuser: admin\npassword: github\n\n- Simple User\nuser: leo\npassword: github",
       "id": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67",
-      "lastModified": "2018-12-28T09:39:24.472-02:00",
+      "lastModified": "2019-01-03T11:04:25.440-02:00",
       "name": "Scenario CRUD",
       "requestOrder": [
         "GET",
@@ -20,7 +20,8 @@
         "GET (BY NAME)",
         "POST",
         "PUT",
-        "DELETE"
+        "DELETE (BY ID)",
+        "DELETE ALL"
       ],
       "parentId": "5f21fcfd-8b52-4c65-b340-fe36f9cef9fa"
     },
@@ -101,11 +102,11 @@
           "version": "V11"
         },
         "host": "localhost:8888",
-        "path": "/students/21"
+        "path": "/students/78"
       },
       "description": "List one student to by id.",
       "id": "b06c0124-c997-42d5-bffb-511af495bb2c",
-      "lastModified": "2019-01-02T09:43:57.733-02:00",
+      "lastModified": "2019-01-03T11:03:44.617-02:00",
       "name": "GET (BY ID)",
       "headers": [
         {
@@ -146,11 +147,11 @@
           "version": "V11"
         },
         "host": "localhost:8888",
-        "path": "/students/findByName/i"
+        "path": "/students/findByName/y"
       },
       "description": "List students that contains this name",
       "id": "4dc752c8-19a6-4377-b4a2-e12ee8107703",
-      "lastModified": "2019-01-02T09:44:04.032-02:00",
+      "lastModified": "2019-01-03T11:03:51.880-02:00",
       "name": "GET (BY NAME)",
       "headers": [
         {
@@ -225,7 +226,7 @@
         },
         "bodyType": "Text",
         "autoSetLength": true,
-        "textBody": "{\n\"id\": 28,\n\"name\": \"Ingridi Farias\",\n\"email\": \"ingridi_farias@gmail.com\",\n\"active\": true\n}"
+        "textBody": "{\n\"id\": 78,\n\"name\": \"Ingridi Farias\",\n\"email\": \"ingridi_farias@gmail.com\",\n\"active\": true\n}"
       },
       "headersType": "Form",
       "uri": {
@@ -242,7 +243,7 @@
       },
       "description": "Alter detais of one student",
       "id": "46e30c83-76bb-4b39-8c23-8d381c335ab7",
-      "lastModified": "2019-01-02T10:12:41.463-02:00",
+      "lastModified": "2019-01-03T11:03:59.732-02:00",
       "name": "PUT",
       "headers": [
         {
@@ -284,11 +285,11 @@
           "version": "V11"
         },
         "host": "localhost:8888",
-        "path": "/students/26"
+        "path": "/students/78"
       },
       "id": "c989182b-112d-4963-ab0b-524544573ab4",
-      "lastModified": "2019-01-02T10:14:11.296-02:00",
-      "name": "DELETE",
+      "lastModified": "2019-01-03T11:04:25.440-02:00",
+      "name": "DELETE (BY ID)",
       "headers": [
         {
           "enabled": true,
@@ -296,6 +297,45 @@
           "value": "application/json"
         }
       ],
+      "metaInfo": {
+        "ownerId": "github|7613528"
+      },
+      "parentId": "35130bf9-d4cb-4aea-9c3f-2f68186c9b67"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8888",
+        "path": "/students/deleteAll"
+      },
+      "description": "Delete all students",
+      "id": "979c6027-2aaa-46c6-bec4-fbec7febb05a",
+      "lastModified": "2019-01-03T11:00:20.665-02:00",
+      "name": "DELETE ALL",
+      "headers": [],
       "metaInfo": {
         "ownerId": "github|7613528"
       },

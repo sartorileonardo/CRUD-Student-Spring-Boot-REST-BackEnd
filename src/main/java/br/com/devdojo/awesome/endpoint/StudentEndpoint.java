@@ -58,6 +58,12 @@ public class StudentEndpoint {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @DeleteMapping(path = "/deleteAll")
+    public ResponseEntity<?> delete(){
+        studentDAO.deleteAll();
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @PutMapping
     public ResponseEntity<?> update(@RequestBody Student student){
         verifyIfStudentExists(student.getId());
