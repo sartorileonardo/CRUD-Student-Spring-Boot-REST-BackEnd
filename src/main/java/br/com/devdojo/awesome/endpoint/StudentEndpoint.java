@@ -59,7 +59,7 @@ public class StudentEndpoint {
     }
 
     @DeleteMapping(path = "/deleteAll")
-    public ResponseEntity<?> delete(){
+    public ResponseEntity<?> deleteAll(){
         studentDAO.deleteAll();
         return new ResponseEntity<>(HttpStatus.OK);
     }
